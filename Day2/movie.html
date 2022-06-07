@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <style>
+      h1,p{
+        text-align: center;
+       
+    }
+    #container{
+        display: grid;
+       grid-template-rows: repeat(2,1fr);
+       grid-template-columns: repeat(3,1fr);
+       border: 1px solid black;
+        gap: 20px;
+
+    }
+    #container>div{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px 10px 10px 10px;
+        text-align: center;
+    }
+    h5+img{
+        width:100%;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    #container>div>img{
+       width:100%;
+      
+
+    }
+    button{
+         background-color: white;
+         border-radius: 10px;
+         color: red;
+         border-radius: 10px;
+         height: 60px;
+         width:100px;
+         margin:auto;
+     }    
+
+
+    </style>
+</head>
+<body>
+      <div id="container">
+          <div>
+              <img src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg" alt="err">
+              <h4>Dr.Strange</h4>
+              <p>Rating 4.5</p>
+              <button>Book Now</button>
+          </div>
+          <div>
+             <img src="https://assetscdn1.paytm.com/images/cinema/bb2--705x750-cbc15240-8a94-11ec-8efd-6d205f33f529.jpg" alt="err">
+            <h4>Bhool Bhulaiyaa 2</h4>
+            <p>Rating 4.5</p>
+            <button>Book Now</button>
+        </div>
+          <div>
+            <img src="https://assetscdn1.paytm.com/images/cinema/Jayeshbhai-Jordaar---705x750-660c01c0-cf7c-11ec-98b3-41c37f260d1c.jpg" alt="err">
+            <h4>Jayeshbhai Jordaar</h4>
+            <p>Rating 4.5</p>
+            <button>Book Now</button>
+          </div>
+          <div> 
+            <img src="https://assetscdn1.paytm.com/images/cinema/Jurassic-World--Dominion-705x750-b554ee90-cd51-11ec-8d22-2363945d80ef.jpg" alt="err">
+            <h4>Jurasic World</h4>
+            <p>Rating 4.5</p>
+            <button>Book Now</button>
+        </div>
+          <div> <img src="https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg" alt="err">
+            <h4>KGF 2</h4>
+            <p>Rating 4.5</p>
+            <button>Book Now</button></div>
+          <div>
+            <img src="https://assetscdn1.paytm.com/images/cinema/RRR-North-705x750-fd78d9c0-693d-11ec-bbcd-5d122dc4018b.jpg" alt="err">
+            <h4>RRR</h4>
+            <p>Rating 4.5</p>
+            <button>Book Now</button>
+          </div>
+      </div>
+</body>
+</html>

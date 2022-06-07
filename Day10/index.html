@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html>
+    <head>
+        <title>Practise Selectors</title>
+    </head>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <h5>First H5</h5>
+        <h5>Second H5</h5>
+        <h5>Third H5</h5>
+        <div class="green">First DIV</div>
+        <div class="red">Second DIV</div>
+        <div class="blue">Third DIV</div>
+        <p class="green">First P</p>
+        <p class="red">Second P</p>
+        <p class="blue">Third P</p>
+        <hr/>
+        <button id="btn1">Change H1</button>
+        <button id="btn2">Change H3</button>
+        <button id="btn3">Change H5</button>
+        <button id="btn4">Change Green</button>
+        <button id="btn5">Change Red</button>
+        <button id="btn6">Change Blue</button>
+        <script>
+        </script>
+    </body>
+</html> 
+</body>
+</html>
+<script>
+
+document.querySelector("#btn1").addEventListener("click",change1)
+    function change1(){
+        document.querySelector("h1").style.color="red";  
+    }
+     
+   
+     
+    
+//  document.querySelector("#btn2").addEventListener("click",change2)
+//  console.log(change1)
+//  function change2(){
+//      document.querySelectorAll("h3").style.color="green";
+//  }
+
+document.querySelector("#btn2").addEventListener("click",change2)
+function change2(){
+  document.querySelector("h3").style.color="green";
+ var gr=document.querySelectorAll("h3");
+ for(var i=0; i<gr.length; i++){
+     gr[i].style.color="green";
+ }
+}
+
+
+document.querySelector("#btn3").addEventListener("click",change3)
+function change3(){
+  document.querySelector("h5").style.color="blue";
+ var gr=document.querySelectorAll("h5");
+ for(var i=0; i<gr.length; i++){
+     gr[i].style.color="blue";
+ }
+}
+document.querySelector("#btn4").addEventListener("click",change4)
+function change4(){
+  document.querySelector(".green").style.color="green";
+ var gr=document.querySelectorAll(".green");
+ for(var i=0; i<gr.length; i++){
+     gr[i].style.color="green";
+ }
+}
+document.querySelector("#btn5").addEventListener("click",change5)
+function change5(){
+  document.querySelector(".blue").style.color="blue";
+ var gr=document.querySelectorAll(".blue");
+ for(var i=0; i<gr.length; i++){
+     gr[i].style.color="blue";
+ }
+}
+document.querySelector("#btn6").addEventListener("click",change6)
+function change6(){
+  document.querySelector(".red").style.color="red";
+ var gr=document.querySelectorAll(".red");
+ for(var i=0; i<gr.length; i++){
+     gr[i].style.color="red";
+ }
+}
+
+
+
+</script>
+
+
+
+
+
+
+

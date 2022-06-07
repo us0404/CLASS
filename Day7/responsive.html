@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+     h1{
+         width: 30%;
+         margin: auto;
+         text-align: center;
+         font-size: 40px;
+     }
+     h1+p{
+         text-align: center;
+         width: 40%;
+         margin: auto;
+         padding:20px;
+     }
+     #container{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         grid-template-rows: repeat(1,1fr);
+        ;
+     
+     }
+     #container>div{
+         width: 300px;
+         text-align: center;
+         justify-content: center;
+         align-items: center;
+         margin: auto;
+         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+         border-radius: 10px 10px 10px 10px;
+        
+     }
+   
+     
+    button{
+        border: 1px solid skyblue;
+        background-color: whitesmoke;
+        width: 40%;
+        height: 50px;
+        font-size: 16px;
+        margin-bottom: 20px;
+
+
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>Chose a plan that right for your Bussines</h1>
+    <p>We collect reviews from our users so you can get an honest opinion of what an
+        experience with our website are really like!</p>
+
+        <div id="container">
+            <div>
+                <h2>Starter Plan</h2>
+                <h1>Free</h1>
+                <p>Per month</p>
+                <p>
+                    We collect reviews from our
+                    users so you can get an honest
+                    opinion of what an experience
+                     with our website.
+                </p>
+                <button>Start Now</button> 
+            </div>
+            <div>
+                <h2>Starter Plan</h2>
+                <h1>Free</h1>
+                <p>Per month</p>
+                <p>
+                    We collect reviews from our
+                    users so you can get an honest
+                    opinion of what an experience
+                     with our website.
+                </p>
+                <button>Start Now</button> 
+            </div>
+            <div>
+                <h2>Starter Plan</h2>
+                <h1>Free</h1>
+                <p>Per month</p>
+                <p>
+                    We collect reviews from our
+                    users so you can get an honest
+                    opinion of what an experience
+                     with our website.
+                </p>
+                <button>Start Now</button> 
+            </div>
+        </div>
+</body>
+</html>
